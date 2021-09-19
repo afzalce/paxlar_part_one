@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* top header part start */
+.top_header{
+    background: #efefef;
+    padding: 15px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.top_header p{
+    margin: 0;
+    color: #7f7f7f;
+    font-size: 14px;
+}
+.top_header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.top_header ul li{
+}
+.top_header ul li a{
+    color: #7f7f7f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+/* header part start  */
+header{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar>.container-fluid{
+    padding: 0;
+}
+.btn_join, .extra_btn_join, .btn_join_us{
+    background: #ff9b1a;
+    padding: 0;
+    padding: 5px 10px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+}
+.btn_join:hover, .extra_btn_join:hover, .btn_join_us:hover{
+    background: #e4870e;
+    color: #fff;
+}
+.extra_btn_join{
+    display: none;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #161616;
+    text-transform: uppercase;
+    font-size: 15px;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0%;
+    background: #ff9b1a;
+    transition: .4s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0%;
+    background: #ff9b1a;
+    transition: .4s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover{    
+}
+.navbar-light .navbar-nav .nav-link:hover::before{ 
+    width: 46%;   
+}
+.navbar-light .navbar-nav .nav-link:hover::after{ 
+    width: 46%;   
+}
+
+/* banner part start */
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.hg{
+    min-height: 80vh;
+    align-items: center;
+}
+.banner h1{
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.count{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    font-family: 'Raleway', sans-serif;
+}
+.count_item{
+}
+.count_item h5{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.count_item h6{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn_join_us{
+    padding: 0;
+    padding: 7px 20px;
+    border: 1px solid #ff9b1a;
+    margin-right: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn_contact_us{
+    padding: 0;
+    padding: 7px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn_contact_us:hover{
+    background: #ff9b1a;
+    color: #fff;
+    border-color: #ff9b1a;   
+}
+
+/* instruction start  */
+.instruction{
+    font-family: 'Montserrat', sans-serif;
+}
+.instruction_item{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    transition: .4s all ease-in-out;
+    position: relative;
+    z-index: 0;
+}
+.instruction_item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c9a205+0,f16d0c+100&0.85+0,0.85+100 */
+    background: -moz-linear-gradient(top,  rgba(201,162,5,0.85) 0%, rgba(241,109,12,0.85) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(201,162,5,0.85) 0%,rgba(241,109,12,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(201,162,5,0.85) 0%,rgba(241,109,12,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9c9a205', endColorstr='#d9f16d0c',GradientType=0 ); /* IE6-9 */
+    transition: .4s all ease-in-out;
+    z-index: -1;
+}
+.instruction_item:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.instruction_item:hover{
+    background-image: url(../images/bitcoin.png);   
+    background-position: center;
+}
+.instruction_item:hover i{
+    color: #fff;
+    z-index: 999 !important;
+}
+.instruction_item:hover h3{
+    color: #fff; 
+    z-index: 999 !important;
+}
+.instruction_item:hover p{
+    color: #fff;
+    z-index: 999 !important;
+}
+.instruction_item i{
+    font-size: 40px;
+    color: #ff9b1a;
+    margin-bottom: 25px;
+}
+.instruction_item h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.instruction_item p{
+    font-size: 14px;
+    color: #545454;
+}
+/* service part start  */
+.service{   
+}
+.heading{
+}
+.heading h2{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+}
+.heading p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #545454;
+    position: relative;
+}
+.heading p::before{
+    content: '';
+    position: absolute;
+    left: 40%;
+    bottom: -15px;
+    background: #e26202;
+    height: 2px;
+    width: 0;
+    transition: .4s all ease-in-out;
+}
+.heading p::after{
+    content: '';
+    position: absolute;
+    right: 40%;
+    bottom: -15px;
+    background: #e26202;
+    height: 2px;
+    width: 0;
+    transition: .4s all ease-in-out;
+}
+.service:hover .heading p::before{
+    width: 50px;
+}
+.service:hover .heading p::after{
+    width: 50px;
+}
+/* .heading span{   
+    display: block;    
+    width: 50px;    
+    height: 2px;    
+    background: #e26202;    
+    margin: auto;
+} */
+.sevice_item{
+    font-family: 'Raleway', sans-serif;
+}
+.item_img{
+    width: 18%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.item_img img{   
+}
+.sevice_item h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sevice_item p{
+    font-size: 14px;
+    color: #545454;
+}
+.btn_view{
+    color: #000;
+    border-color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
